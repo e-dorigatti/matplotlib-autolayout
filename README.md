@@ -26,7 +26,7 @@ fig, axes, gridspecs = generate_layout('''
 
 # annotate the name of each axis in the center
 for name, ax in axes.items():
-    ax.annotate(f'{name}', (0.5, 0.5), ha='center', va='center')
+    ax.annotate(name, (0.5, 0.5), ha='center', va='center')
     ax.set_xticks([])
     ax.set_yticks([])
 ```
@@ -124,10 +124,13 @@ Options:
   --help                      Show this message and exit.
 ```
 
-## Requirements
-There are no requirements for `generate_source_code`. The command line interface
-needs [click][clk] and matplotlib, only if a preview is requested.
-`generate_layout` needs matplotlib.
+## Installation
+Via pip:
+
+```
+pip install git+https://github.com/e-dorigatti/matplotlib-autolayout/
+```
+
 
 
 [gs]: https://matplotlib.org/3.1.3/api/_as_gen/matplotlib.gridspec.GridSpec.html
