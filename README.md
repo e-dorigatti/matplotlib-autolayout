@@ -49,7 +49,7 @@ generate_source_code('''
 
 ```
 
-This will print:
+This will print the necessary code to create the layout:
 
 ```
 import matplotlib as mpl
@@ -93,7 +93,7 @@ gridspecs["gs_3"] = mpl.gridspec.GridSpecFromSubplotSpec(
 axes["ax_3"] = fig.add_subplot(gridspecs["gs_3"][0])
 
 for name, ax in axes.items():
-    ax.annotate(f"ax {{name}}", (0.5, 0.5), ha="center", va="center")
+    ax.annotate(name, (0.5, 0.5), ha="center", va="center")
 ```
 
 This functionality is also implemented in a command-line utility by running the

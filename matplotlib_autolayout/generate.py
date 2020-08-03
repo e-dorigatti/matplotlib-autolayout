@@ -101,7 +101,7 @@ def generate_source_code(
 
     if annotate:
         file.write("\nfor name, ax in axes.items():\n")
-        file.write('    ax.annotate(f"{name}", (0.5, 0.5), ha="center", va="center")\n')
+        file.write('    ax.annotate(name, (0.5, 0.5), ha="center", va="center")\n')
 
 
 def generate_layout(
